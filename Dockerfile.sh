@@ -5,6 +5,8 @@ MAINTAINER Yevgeniy Poluektov <e.poluektov@rbkmoney.com>
 
 COPY geo_data/GeoLite2-City-Locations-en.csv /var/geodata/GeoLite2-City-Locations-en.csv
 COPY geo_data/GeoLite2-City-Locations-ru.csv /var/geodata/GeoLite2-City-Locations-ru.csv
+COPY geo_data/GeoLite2-City.mmdb /var/geodata/GeoLite2-City.mmdb
+VOLUME /var/geodata
 
 # A bit of magic below to get a proper branch name
 # even when the HEAD is detached (Hey Jenkins!
